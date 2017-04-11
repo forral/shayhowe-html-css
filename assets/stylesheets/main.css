@@ -1,0 +1,165 @@
+/*
+  ========================================
+  Eric Meyer’s CSSS Reset
+  ========================================
+  http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end of Eric Meyer’s CSSS Reset */
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+/* NOTES:
+The border-box value alters the box model so that any 
+border or padding property values are included within 
+the width and height of an element.
+
+The :before and :after pseudo-elements are elements that can be 
+dynamically generated with CSS. When using the universal selector 
+it’s a good practice to also include these pseudo-elements in case 
+they should ever appear.
+http://learn.shayhowe.com/html-css/opening-the-box-model/
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+NOTES:
+Setting a width tells the browser definitively how wide any 
+element with the class of container should be. 
+Using a left and right margin of auto in conjunction with this 
+width lets the browser automatically figure out equal 
+left and right margins for the element, thus centering it on 
+the page. Lastly, the left and right padding ensures that our 
+content isn’t sitting directly on the edge of the element and 
+provides a little breathing room for the content.
+http://learn.shayhowe.com/html-css/opening-the-box-model/#practice-1
+*/
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
+/* end of Grid */
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/* end of Clearfix */
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+/*end of Typography*/
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-alt {
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
+}
+/* end of Buttons */
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+  padding: 22px 80px 66px 80px;
+}
