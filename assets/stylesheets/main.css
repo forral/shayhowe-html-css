@@ -361,6 +361,20 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
+
+/* 
+set their maximum width to 100% to ensure they 
+don’t exceed the width of their respective columns.
+Changing this width value is important as it allows 
+our images to adjust with the width of the columns 
+as necessary.
+ */
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
 /* end of Home */
 
 /*
@@ -422,10 +436,36 @@ p a {
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
-  padding: 22px 0;
+  padding.bottom: 22px;
   text-align: center;
 }
 
 .speaker {
   margin-bottom: 44px;
+}
+
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+/* end of Speakers */
+
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+
+.venue-hotel {
+  margin-bottom: 22px;
+}
+
+.venue-map {
+  height: 264px;
 }
